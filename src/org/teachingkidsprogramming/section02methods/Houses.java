@@ -11,8 +11,6 @@ public class Houses
     Tortoise.setSpeed(8);
     Tortoise.setX(200);
     int height = 40;
-    for (int i = 0; i < 5; i++) {
-      
     drawHouse(height);
     drawHouse(120);
     drawHouse(90);
@@ -30,5 +28,4 @@ public class Houses
     Tortoise.move(20);
     Tortoise.turn(-90);
   }
-}
 }
