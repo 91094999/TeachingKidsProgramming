@@ -11,7 +11,7 @@ public class Houses4
     VirtualProctor.setName("James Williams");
     Tortoise.show();
     Tortoise.setSpeed(10);
-    Tortoise.setX(200);
+    Tortoise.setX(0);
     int height = 40;
     drawHouse(height);
     drawHouse(120);
@@ -26,6 +26,8 @@ public class Houses4
     //drawSlantedRoof();
     //drawPointyRoof();
     //drawTrapezoidRoof();
+    drawRoundRoof();
+    drawRoundRoof();
     drawRoundRoof();
     Tortoise.move(height);
     Tortoise.turn(-90);
