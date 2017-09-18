@@ -26,20 +26,16 @@ public class Houses3
     //drawFlatRoof();
     //draw a pointy roof
     //draw a slanted roof
-    drawSlantedRoof();
-    //drawPointyRoof();
-    Tortoise.move(height);
-    Tortoise.turn(-90);
-    Tortoise.move(20);
-    Tortoise.turn(-90);
-  }
-  private static void drawSlantedRoof()
-  {
     Tortoise.move(30);
     Tortoise.turn(120);
     Tortoise.move(40);
     Tortoise.turn(60);
     Tortoise.move(10);
+    //drawPointyRoof();
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(20);
+    Tortoise.turn(-90);
   }
   private static void drawPointyRoof()
   {

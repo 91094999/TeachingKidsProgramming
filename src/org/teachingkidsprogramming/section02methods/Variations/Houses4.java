@@ -27,8 +27,6 @@ public class Houses4
     //drawPointyRoof();
     //drawTrapezoidRoof();
     drawRoundRoof();
-    drawRoundRoof();
-    drawRoundRoof();
     Tortoise.move(height);
     Tortoise.turn(-90);
     Tortoise.move(20);
