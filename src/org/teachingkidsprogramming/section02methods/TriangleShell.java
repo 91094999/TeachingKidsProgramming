@@ -13,10 +13,8 @@ public class TriangleShell
     Tortoise.setSpeed(10);
     for (int i = 0; i < 60; i++)
     {
-      //      Change the pen color of the line the tortoise draws to a random color --#9
       Tortoise.setPenColor(PenColors.getRandomColor());
-      //      Increase the current length of the side by 4 pixels --#8
-      Tortoise.move(length + 4);
+      length = length + 4;
       //
       drawTriangle();
       //
