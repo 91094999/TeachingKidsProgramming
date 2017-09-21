@@ -18,7 +18,6 @@ public class TriangleShell
       //
       drawTriangle();
       //
-      //      Turn the tortoise 1/60th of 360 degrees to the right --#10
       Tortoise.turn(360 / 60);
     }
   }
