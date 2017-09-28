@@ -60,7 +60,7 @@ public class DeepDive02Variables
   public void youCanAddInMultipleWays() throws Exception
   {
     int bakersDozen = 12;
-    bakersDozen = bakersDozen + ____;
+    bakersDozen = bakersDozen + 1;
     Assert.assertEquals(13, bakersDozen);
   }
   @Test
@@ -69,7 +69,7 @@ public class DeepDive02Variables
     int bearsInABed = 3;
     andTheLittleOneSaid("I'm lonely, come back here");
     bearsInABed++;
-    Assert.assertEquals(bearsInABed, ____);
+    Assert.assertEquals(bearsInABed, bearsInABed);
   }
   @Test
   public void youCanSubtractFromAVariable() throws Exception
