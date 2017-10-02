@@ -2,26 +2,23 @@ package org.teachingkidsprogramming.section03ifs;
 
 import org.teachingextensions.logo.Sound;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
-// this variation tells user how many guesses they have left
-public class HiLow2
+
+public class HiLow3
 {
   public static void main(String[] args)
   {
-    
+    int upperRange = 100;
     //int i;
     int answer = (int) (Math.random() * 100 + 1);
     // System.out.println("The answer is " + answer);
     for (int i = 0; i <= 8; i++)
     {
-     
-        int guesses = 4;
-        if (guesses == 4)
-        {
-          MessageBox.showMessage("You have 4 guesses left"); 
-          
-        }
-      
       int guess = MessageBox.askForNumericalInput("What is your guess?");
+      //input validation
+      while (guess < 1 || guess > upperRange)
+      {
+        MessageBox.showMessage("Please enter a valid guess between 1 and" + upperRange);
+      }
       if (guess == answer)
       {
         Sound.playBeep();
