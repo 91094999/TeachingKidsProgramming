@@ -19,10 +19,14 @@ public class ConcentricLoop
       {
       }
       //          Do the following 360 times --#8.1
-      Tortoise.move(1);
-      Tortoise.turn(1);
-      //              Change the width of the line that the tortoise draws to 1/100th of the current line --#9      
-      //          End Repeat --#8.2
+      for (int j = 0; j < 360; j++)
+      {
+        Tortoise.move(1);
+        Tortoise.turn(1);
+        //              Change the width of the line that the tortoise draws to 1/100th of the current line --#9 
+        Tortoise.setPenWidth(1 / 100);
+        //          End Repeat --#8.2
+      }
     }
   }
 }
