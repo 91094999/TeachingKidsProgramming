@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.section03ifs;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
 @SuppressWarnings("unused")
 public class DeepDive03Ifs
@@ -222,6 +223,23 @@ public class DeepDive03Ifs
       dessert = "ketchup";
     }
     Assert.assertEquals(___, dessert);
+  }
+  //test for Choose Your Own Adventure
+  //our very first test! :)
+  @Test
+  /*
+  * public void cyoaInputTest() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'explore' the dream?");
+    //Test that user entered "wake up"
+    Assert.assertEquals(result, "wake up");
+  }
+  */
+  public void cyoaInputTest2() throws Exception
+  {
+    String result = MessageBox.askForTextInput("Do you want to 'wake up' or 'explore' the dream?");
+    //Test that user entered "explore"
+    Assert.assertEquals(result, "explore");;
   }
   /**
    * Ignore the following, It's needed to run the deep dive
