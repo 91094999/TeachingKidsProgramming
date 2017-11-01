@@ -3,6 +3,7 @@ package org.teachingkidsprogramming.section04mastery;
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors.Blues;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Purples;
 
 public class PentagonCrazy
 {
@@ -32,16 +33,16 @@ public class PentagonCrazy
   private static void adjustPen()
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
-    //        Increase the tortoises pen width by 1 --#15                                              
-    //        If the tortoise's pen width is greater than 4, then --#17
-    //            Reset the pen width to 1 --#16
+    Tortoise.setPenWidth(2);
+    //        If the tortoise's pen width is greater than 4, then --#17 
+    Tortoise.setPenWidth(1);
   }
   private static void createColorPalett()
   {
     ColorWheel.addColor(Blues.SteelBlue);
-    //    Add dark orchid to the color wheel --#11
-    //    Add dark slate blue to the color wheel --#12
-    //    Add teal to the color wheel --#13
-    //    Add indigo to the color wheel --#14
+    ColorWheel.addColor(Purples.DarkOrchid);
+    ColorWheel.addColor(Blues.DarkSlateBlue);
+    ColorWheel.addColor(Blues.Teal);
+    ColorWheel.addColor(Purples.Indigo);
   }
 }
