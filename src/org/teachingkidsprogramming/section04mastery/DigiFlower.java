@@ -12,7 +12,7 @@ public class DigiFlower
 {
   public static void main(String[] args)
   {
-    Tortoise.setAnimal(Animals.Spider);
+    Tortoise.setAnimal(Animals.Unicorn);
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(Grays.Silver);
