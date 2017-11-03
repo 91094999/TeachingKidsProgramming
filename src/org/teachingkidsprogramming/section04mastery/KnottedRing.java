@@ -9,7 +9,7 @@ public class KnottedRing
   public static void main(String[] args)
   {
     Tortoise.show();
-    Tortoise.setSpeed(10);
+    Tortoise.setSpeed(100 / 10);
     createColorPalette();
     for (int i = 0; i < 30; i++)
     {
