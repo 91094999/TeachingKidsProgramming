@@ -61,7 +61,7 @@ public class DeepDive05Recursion
   public void findTheNumberPositionOfTheWorld() throws Exception
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
-    String result = messages.get(____);
+    String result = messages.get(1);
     Assert.assertEquals("World!", result);
   }
   @Test
@@ -69,33 +69,33 @@ public class DeepDive05Recursion
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
     String result = messages.get(4);
-    Assert.assertEquals(___, result);
+    Assert.assertEquals("You", result);
   }
   @Test
   public void whatIsLastNow() throws Exception
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
-    messages.set(4, ___);
+    messages.set(4, "The rest of them");
     String result = messages.get(4);
     Assert.assertEquals("The rest of them", result);
   }
   @Test
   public void putAQuarterAtTheEnd() throws Exception
   {
-    int[] coins = {1, 5, 10, ____};
+    int[] coins = {1, 5, 10, 25};
     Assert.assertEquals(25, coins[3]);
   }
   @Test
   public void getThirdCoin() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(10, coins[____]);
+    Assert.assertEquals(10, coins[2]);
   }
   @Test
   public void whichCoinIsSecond() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(____, coins[1]);
+    Assert.assertEquals(5, coins[1]);
   }
   @Test
   public void putAFiftyCentPieceFirst() throws Exception
