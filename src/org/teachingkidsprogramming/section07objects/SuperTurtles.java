@@ -15,7 +15,6 @@ public class SuperTurtles
   }
   private void showSomeTurtles()
   {
-    //  makeSpeedyTurtle (recipe below) --#2.0
     makeSpeedyTurtle();
     //  makeSlowTurtle (recipe below) --#4.0
     //  ------------- Recipe for makeSlowTurtle --#3.0
@@ -32,12 +31,11 @@ public class SuperTurtles
   }
   private void makeSpeedyTurtle()
   {
-    //  ------------- Recipe for makeSpeedyTurtle --#1.0
     //        Create a new speedyTurtle instance  
-    SuperTurtles speedyTurtle = new SuperTurtles();
+    Turtle speedyTurtle = new Turtle();
     //        Add your speedyTurtle to your MultiTurtleWindow
+    mtw.addAndShowTurtle(speedyTurtle);
     //        Set the speed of your speedyTurtle to the fastest possible    
     //        Have your speedyTurtle draw a triangle with 100 pixel sides
-    //  ------------- End of makeSpeedyTurtle --#1.1 
   }
 }
