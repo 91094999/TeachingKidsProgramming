@@ -44,6 +44,10 @@ public class CloneTurtles
       // End Repeat --#6.2
     }
     //
+    for (Turtle turle : turtles)
+    {
+      turtle.setPenWidth();
+    }
     // Use a FOREACH loop to set values for all of your turtles --#7.1
     //      Set the pen width to 10 pixels -- #7.3
     //      Set the turtle speed to 9 --#7.4
